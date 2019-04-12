@@ -188,7 +188,7 @@ export default {
     }
     @media(max-width:800px){
         form{
-        width:69vw;
+        width:88vw;
         margin:auto auto auto auto;
         background:white;
         padding: 15px;
@@ -199,8 +199,8 @@ export default {
         width:auto;
        
         margin-top:-20px;
-        background-size: 125%;
-        height:200vh;
+        background-size: 145%;
+        height:170vh;
         background-repeat: no-repeat;
         
 
