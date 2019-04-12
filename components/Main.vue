@@ -197,11 +197,10 @@ export default {
         .forma-container{
         background-image: url("~assets/formaBg-mobile.jpg" );
         width:auto;
-       
-        margin-top:-20px;
-        background-size: 145%;
+        margin:-20px auto auto auto;
+        background-size: 190%;
         height:170vh;
-        background-repeat: no-repeat;
+        
         
 
     }
