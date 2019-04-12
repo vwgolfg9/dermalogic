@@ -112,16 +112,6 @@ export default {
         const {form} = this.$refs;
         const fr = new TimelineLite()
 
-       
-
-        const formCoordinates = form.getBoundingClientRect();
-        const vh = window.innerHeight;
-        console.log(form.getBoundingClientRect())
-        
-        if(form.focus()){(
-            fr.to(form, 1, {width: "70%", ease: Back.easeInOut} )
-        )}
-
     },
     components: {
     },
