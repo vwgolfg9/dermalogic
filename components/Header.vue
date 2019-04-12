@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="global">
     <div class="columns is-mobile">
       <div class="column">
         <a href="/" ><img class="logo" src="@/assets/dermalogic-logo-2.png" width="80" alt=""></a>

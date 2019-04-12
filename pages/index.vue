@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="global">
   <app-header></app-header>
   <app-main></app-main>
 </div>
@@ -32,5 +32,7 @@ export default {
 </script>
 
 <style>
-
+  .global{
+    margin : 0;
+  }
 </style>

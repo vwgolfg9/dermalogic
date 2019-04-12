@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="global">
         <div  class="hero is-primary ">
             <div class="hero-body">
                 <div ref="title" class="title ">
