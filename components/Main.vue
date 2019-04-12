@@ -3,7 +3,7 @@
         <div  class="hero is-primary ">
             <div class="hero-body">
                 <div ref="title" class="title ">
-                    <h1 >Dermalogic</h1>
+                    <h1 id="titlos" >Dermalogic</h1>
                 </div>
                 <div ref="subtitle" class="subtitle">
                     <h2>
@@ -17,18 +17,18 @@
         </div>
         <div class=" forma-container">
            <form ref="form" class="forma" action="POST">
-               <h1 class="title">Συμπλήρωσε τα στοιχεία σου <br> για να λάβεις μέρος στον Διαγωνισμό!</h1>
+               <h1 id="stixeia" class="title">Συμπλήρωσε τα στοιχεία σου <br> για να λάβεις μέρος στον Διαγωνισμό!</h1>
                <div class="field">
                 <label class="label">Όνομα</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Το Όνομα σου">
+                    <input class="input" type="text" placeholder="Το Όνομα σας">
                 </div>
                 </div>
 
                 <div class="field">
                 <label class="label">Επίθετο</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Το Επίθετο σου">
+                    <input class="input" type="text" placeholder="Το Επίθετο σας">
                     <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                     </span>
@@ -42,7 +42,7 @@
                 <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input " type="email" placeholder="Email input" value="hello@">
+                    <input class="input " type="email" placeholder="Email" >
                     <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                     </span>
@@ -51,16 +51,9 @@
                 </div>
 
                 <div class="field">
-                <label class="label">Subject</label>
+                <label class="label">Αριθμός τηλεφώνου</label>
                 <div class="control">
-                    <input type="text" class="input">
-                </div>
-                </div>
-
-                <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                    <input type="text" class="input" placeholder="Το τηλέφωνο σας">
                 </div>
                 </div>
 
@@ -142,7 +135,7 @@ export default {
 </script>
 
 <style scoped>
-
+    
     .box{
         width:300px;
         height:300px;
@@ -187,6 +180,10 @@ export default {
         top:40px;
     }
     @media(max-width:800px){
+        #titlos{
+            font-size: 45px;
+        }
+
         form{
         width:88vw;
         margin:auto auto auto auto;
@@ -194,15 +191,17 @@ export default {
         padding: 15px;
         border-radius:7px;
         }
+        
         .forma-container{
         background-image: url("~assets/formaBg-mobile.jpg" );
         width:auto;
         margin:-20px auto auto auto;
         background-size: 190%;
         height:170vh;
-        
-        
+        }
 
-    }
+        #stixeia{
+            font-size:18px ;
+        }
     }
 </style>

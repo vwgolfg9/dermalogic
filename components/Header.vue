@@ -2,7 +2,7 @@
   <div class="global">
     <div class="columns is-mobile">
       <div class="column">
-        <a href="/" ><img class="logo" src="@/assets/dermalogic-logo-2.png" width="80" alt=""></a>
+        <a href="/" ><img class="logo" src="@/assets/logo.svg" width="80" alt=""></a>
       </div>
       <div class="columns column is-4-mobile is-3-desktop is-mobile container-social ">
         <a href="https://www.facebook.com/dermalogicskin/?ref=search&__tn__=%2Cd%2CP-R&eid=ARA5NRFIIf93j1q1R8JdHhK2uCGBB9oM9E2Cq4AvbOH3czJtZrVPeYeD94U5FIi55VvclwsB0AVcH2lF" 
