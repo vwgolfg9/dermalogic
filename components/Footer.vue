@@ -1,7 +1,7 @@
 <template>
     <div class="global columns is-mobile">
         <div id="logoContainer" class="column is-2">
-            <img id="logo" src="@/assets/dermalogic-logo-2.png" alt="">
+            <img id="logo" src="@/assets/logo.svg" alt="">
         </div>
         <div id="oraria" class="column ">
             <p><strong>Δευτέρα - Σάββατο :<br> 08:00 - 17:00</strong></p>

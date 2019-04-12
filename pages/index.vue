@@ -35,15 +35,18 @@ export default {
 </script>
 
 <style>
+ 
+
   .global{
-      
+    width:100%;
+    margin:0px;
   }
 
   html, body{
     width: 100%;
     margin:0px;
     padding:0px;
-    overflow-x: hidden;
+   
    
   
   }
