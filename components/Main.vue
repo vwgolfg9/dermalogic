@@ -16,19 +16,23 @@
             </div>
         </div>
         <div class=" forma-container">
-           <form ref="form" class="forma" action="POST">
+            <script type="text/javascript">var submitted=false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+            onload="if(submitted) {window.location='thankyou';}"></iframe>
+           <form ref="form" class="forma" method="post"
+                 target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSeUdgkkkcq9xG2d6gBrJuTMgW0YbHS4pHaENBlH37GNBmXF4w/formResponse">
                <h1 id="stixeia" class="title">Συμπλήρωσε τα στοιχεία σου <br> για να λάβεις μέρος στον Διαγωνισμό!</h1>
                <div class="field">
                 <label class="label">Όνομα</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Το Όνομα σας">
+                    <input class="input" type="text" name="entry.596945731" placeholder="Το Όνομα σας">
                 </div>
                 </div>
 
                 <div class="field">
                 <label class="label">Επίθετο</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" placeholder="Το Επίθετο σας">
+                    <input class="input" name="entry.1964927439" type="text" placeholder="Το Επίθετο σας">
                     <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                     </span>
@@ -42,7 +46,7 @@
                 <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input " type="email" placeholder="Email" >
+                    <input class="input " type="email" name="entry.40194550" placeholder="Email" >
                     <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                     </span>
@@ -53,39 +57,28 @@
                 <div class="field">
                 <label class="label">Αριθμός τηλεφώνου</label>
                 <div class="control">
-                    <input type="text" class="input" placeholder="Το τηλέφωνο σας">
+                    <input type="number" class="input" name="entry.1011499247" placeholder="Το τηλέφωνο σας">
                 </div>
                 </div>
 
                 <div class="field">
                 <div class="control">
                     <label class="checkbox">
-                    <input type="checkbox">
-                    I agree to the <a href="#">terms and conditions</a>
+                    <input type="checkbox"  required>
+                    Συμφωνώ στους <a href="#">Όρους και Προϋποθέσεις</a>
                     </label>
                 </div>
                 </div>
 
                 <div class="field">
-                <div class="control">
-                    <label class="radio">
-                    <input type="radio" name="question">
-                    Yes
-                    </label>
-                    <label class="radio">
-                    <input type="radio" name="question">
-                    No
-                    </label>
-                </div>
+                    <p>Αν προτιμάτε να παρακάμψετε αυτή τη φόρμα και να επικοινωνήσετε μαζί μας, στείλτε μας το email σας στο nikolettademi@gmail.com ή τηλεφωνήστε στο 70003065 ή 99697296</p>
                 </div>
 
                 <div class="field is-grouped">
                 <div class="control">
                     <button class="button is-link">Submit</button>
                 </div>
-                <div class="control">
-                    <button class="button is-text">Cancel</button>
-                </div>
+                
                 </div>
            </form>
         </div>
@@ -175,9 +168,9 @@ export default {
         }
 
         form{
-        width:88vw;
+        width:97vw;
         margin:auto auto auto auto;
-        background:white;
+        background:white; 
         padding: 15px;
         border-radius:7px;
         }

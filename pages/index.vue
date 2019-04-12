@@ -2,12 +2,14 @@
 <div class="global">
   <app-header></app-header>
   <app-main></app-main>
+  <app-footer></app-footer>
 </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Main from "@/components/Main.vue";
+import Footer from "@/components/Footer.vue";
 
 import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
@@ -27,23 +29,30 @@ export default {
   components: {
     appHeader : Header,
     appMain : Main,
+    appFooter : Footer,
   }
 }
 </script>
 
 <style>
   .global{
-      margin: 0px;
-      padding:0px;
+      
   }
 
   html, body{
     width: 100%;
-    height: 100%;
     margin:0px;
     padding:0px;
     overflow-x: hidden;
    
   
+  }
+
+  html{
+    height: 100%;
+  }
+
+  body{
+    min-height: auto;
   }
 </style>
