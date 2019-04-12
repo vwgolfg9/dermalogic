@@ -1,14 +1,11 @@
 <template>
     <div>
-       <Box class="box" :pose="isVisible ?   'hidden' : 'visible'" >
-           <h1>Hello</h1>
-       </Box>
         <div  class="hero is-primary ">
             <div class="hero-body">
-                <div class="title ">
+                <div ref="title" class="title ">
                     <h1 >Dermalogic</h1>
                 </div>
-                <div class="subtitle">
+                <div ref="subtitle" class="subtitle">
                     <h2>
                        Το υπερσύγχρονο LeShape - Reshape Yourself έφτασε επιτέλους στη Κύπρο.<br> Η Dermalogic χαρίζει σε δέκα τυχερούς <strong>10</strong> θεραπείες αδυνατίσματος.
                     </h2>
@@ -19,18 +16,19 @@
             </div>
         </div>
         <div class=" forma-container">
-           <form class="forma" action="POST">
+           <form ref="form" class="forma" action="POST">
+               <h1 class="title">Συμπλήρωσε τα στοιχεία σου <br> για να λάβεις μέρος στον Διαγωνισμό!</h1>
                <div class="field">
-                <label class="label">Name</label>
+                <label class="label">Όνομα</label>
                 <div class="control">
-                    <input class="input" type="text" placeholder="Text input">
+                    <input class="input" type="text" placeholder="Το Όνομα σου">
                 </div>
                 </div>
 
                 <div class="field">
-                <label class="label">Username</label>
+                <label class="label">Επίθετο</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input is-success" type="text" placeholder="Text input">
+                    <input class="input" type="text" placeholder="Το Επίθετο σου">
                     <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                     </span>
@@ -38,32 +36,24 @@
                     <i class="fas fa-check"></i>
                     </span>
                 </div>
-                <p class="help is-success">This username is available</p>
+                
                 </div>
 
                 <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <input class="input " type="email" placeholder="Email input" value="hello@">
                     <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                     </span>
-                    <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    </span>
+                    
                 </div>
-                <p class="help is-danger">This email is invalid</p>
                 </div>
 
                 <div class="field">
                 <label class="label">Subject</label>
                 <div class="control">
-                    <div class="select">
-                    <select>
-                        <option>Select dropdown</option>
-                        <option>With options</option>
-                    </select>
-                    </div>
+                    <input type="text" class="input">
                 </div>
                 </div>
 
@@ -110,16 +100,37 @@
 </template>
 
 <script>
-import posed from 'vue-pose';
+
+import { TimelineLite } from 'gsap'
 
 
 
 export default {
+    mounted(){
+        const {title} = this.$refs;
+        const timeline = new TimelineLite();
+
+        timeline.to(title, 1, {y: -40,  ease: Back.easeInOut})
+        
+
+        const {subtitle} = this.$refs;
+        timeline.to(subtitle, 1.5, {y: -40, ease: Back.easeInOut}, "-=1")
+
+        const {form} = this.$refs;
+        const fr = new TimelineLite()
+
+       
+
+        const formCoordinates = form.getBoundingClientRect();
+        const vh = window.innerHeight;
+        console.log(form.getBoundingClientRect())
+        
+        if(form.focus()){(
+            fr.to(form, 1, {width: "70%", ease: Back.easeInOut} )
+        )}
+
+    },
     components: {
-        Box: posed.div({
-            visible: { opacity: 1 },
-            hidden: { opacity: 0 }
-        })
     },
     data(){
         return{
@@ -132,19 +143,26 @@ export default {
 
 <style scoped>
 
+    .box{
+        width:300px;
+        height:300px;
+        background-color: brown;
+    }
+
     .forma-container{
         background-image: url("~assets/formaBg.jpg" );
         width:100%;
         margin-top:-20px;
-        background-size: 100%;
-        height:150vh;
+        background-size: 125%;
+        height:130vh;
         background-repeat: no-repeat;
         
 
     }
 
     .title h1{
-        font-size: 70px;
+        margin-top:40px;
+        font-size: 60px;
     }
 
     .hero{
@@ -179,10 +197,10 @@ export default {
         .forma-container{
         background-image: url("~assets/formaBg-mobile.jpg" );
         width:auto;
-        height:100%;
+       
         margin-top:-20px;
-        background-size: 100%;
-        height:150vh;
+        background-size: 125%;
+        height:200vh;
         background-repeat: no-repeat;
         
 
