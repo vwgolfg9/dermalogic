@@ -141,10 +141,11 @@ export default {
         font-size: 60px;
     }
 
+    
     .hero{
         height:500px;
         background: url('~assets/adventure.jpg');
-        background-attachment: fixed;
+        background-attachment: fixed;background-attachment: fixed;
       
     }
     .subtitle h2{
