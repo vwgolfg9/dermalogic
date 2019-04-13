@@ -35,8 +35,13 @@ export default {
 </script>
 
 <style>
- 
-
+/*
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
   .global{
     width:100%;
     margin:0px;

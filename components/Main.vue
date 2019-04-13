@@ -1,6 +1,6 @@
 <template>
     <div class="global">
-        <div  class="hero is-primary ">
+        <div id="firstHero"  class="hero is-primary ">
             <div class="hero-body">
                 <div ref="title" class="title ">
                     <h1 id="titlos" >Dermalogic</h1>
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="field">
-                    <p>Αν προτιμάτε να παρακάμψετε αυτή τη φόρμα και να επικοινωνήσετε μαζί μας, στείλτε μας το email σας στο nikolettademi@gmail.com ή τηλεφωνήστε στο 70003065 ή 99697296</p>
+                    <p>Αν προτιμάτε να παρακάμψετε αυτή τη φόρμα και να επικοινωνήσετε μαζί μας, στείλτε μας το email σας στο <a>dermalogicskin@gmail.com</a> ή τηλεφωνήστε στο 70003065 ή 99697296</p>
                 </div>
 
                 <div class="field is-grouped">
@@ -81,6 +81,36 @@
                 
                 </div>
            </form>
+        </div>
+        <div id="sxetikaContainer" class="hero is-large is-primary">
+            <div id="sxetika" class="hero-body">
+               
+                    <div class="title">
+                        ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sapiente perferendis, quis laboriosam tenetur, obcaecati nam, enim cum error aut quaerat suscipit sequi eveniet quae sed consequuntur iusto corrupti quisquam?
+                    </div>
+               
+            </div>
+        </div>
+        
+        <div id="oroiContainer" class="hero is-medium ">
+            <div id="oroi" class="hero-body">
+                <div class="title"><h2>ΟΡΟΙ ΚΑΙ ΠΡΟΫΠΟΘΕΣΕΙΣ</h2></div>
+                <div class="subtitle">
+                    <ul>
+                        <li>Ο διαγωνισμός λήγει στις τέλος Απριλίου </li>
+                        <li>Θα υπάρξει ένας τυχερός/ή νικητής/ια που θα επιλεχθεί τυχαία μετά από κλήρωση</li>
+                        <li>Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από το εμάς </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="lastHero" class="hero is-small">
+            <div class="hero-body">
+
+            </div>
         </div>
     </div>
 </template>
@@ -142,10 +172,10 @@ export default {
     }
 
     
-    .hero{
+    #firstHero{
         height:500px;
         background: url('~assets/adventure.jpg');
-        background-attachment: fixed;background-attachment: fixed;
+        background-attachment: fixed;
       
     }
     .subtitle h2{
@@ -163,7 +193,45 @@ export default {
         position: relative;
         top:40px;
     }
-    @media(max-width:800px){
+
+    #sxetika{
+        padding:0px;
+        margin-top:80px;
+        text-align: center;
+        height:400px;
+    }
+
+    #sxetika .subtitle{
+        margin:38px auto auto auto;
+        width:600px;
+        font-size: 30px;
+        
+    }
+
+    #sxetikaContainer{
+        background-image: url("~assets/medical-website.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+    }
+
+    #oroi{
+        
+        padding:50px;
+        
+        text-align: center;
+    
+    }
+
+    #oroiContainer{
+    }
+
+    #lastHero{
+         background-image: url("~assets/medical-website.jpg");
+         background-attachment: fixed;
+         background-size: 100%;
+         height:300px;
+    }
+    @media(max-width:930px){
         #titlos{
             font-size: 45px;
         }
@@ -181,11 +249,26 @@ export default {
         width:auto;
         margin:-20px auto auto auto;
         background-size: 190%;
-        height:170vh;
+        height:110vh;
         }
 
         #stixeia{
             font-size:18px ;
         }
+
+        #sxetika{
+            margin-top:80px;
+        }
+
+        #sxetika .subtitle{
+        margin:38px auto auto auto;
+        width:300px;
+        font-size: 25px;
+        }
+        #sxetikaContainer{
+        background-image: url("~assets/medical-website-mobile.jpg");
+        background-attachment: fixed;
+        background-size: 100%;
+    }
     }
 </style>
