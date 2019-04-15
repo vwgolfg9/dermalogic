@@ -65,7 +65,7 @@
                 <div class="control">
                     <label class="checkbox">
                     <input type="checkbox"  required>
-                    Συμφωνώ στους <a href="#">Όρους και Προϋποθέσεις</a>
+                    Συμφωνώ στην <a href="/privacy">Πολιτική Απορρήτου</a>
                     </label>
                 </div>
                 </div>
