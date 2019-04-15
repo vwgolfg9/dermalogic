@@ -3,11 +3,11 @@
         <div id="firstHero"  class="hero is-primary ">
             <div class="hero-body">
                 <div ref="title" class="title ">
-                    <h1 id="titlos" >Dermalogic</h1>
+                    <h1 id="titlos" >Κέρδισε την θεραπεία INTENSIVE INSTANT LIFTING & GLOW αξίας 120 ευρώ</h1>
                 </div>
-                <div ref="subtitle" class="subtitle">
+                <div id="subtitle" ref="subtitle" class="subtitle">
                     <h2>
-                       Το υπερσύγχρονο LeShape - Reshape Yourself έφτασε επιτέλους στη Κύπρο.<br> Η Dermalogic χαρίζει σε δέκα τυχερούς <strong>10</strong> θεραπείες αδυνατίσματος.
+                       Επαναστατική μεσοθεραπεία Ιατρικής Αισθητικής χωρίς βελόνες ή μηχανήματα για άμεσο λιφτινγκ, λείανση, αναδόμηση και λάμψη προσώπου και λαιμού.
                     </h2>
                 </div>
                 <div class="">
@@ -100,9 +100,9 @@
                 <div class="title"><h2>ΟΡΟΙ ΚΑΙ ΠΡΟΫΠΟΘΕΣΕΙΣ</h2></div>
                 <div class="subtitle">
                     <ul>
-                        <li>Ο διαγωνισμός λήγει στις τέλος Απριλίου </li>
-                        <li>Θα υπάρξει ένας τυχερός/ή νικητής/ια που θα επιλεχθεί τυχαία μετά από κλήρωση</li>
-                        <li>Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από το εμάς </li>
+                        <li ><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο διαγωνισμός λήγει στις τέλος Απριλίου </li>
+                        <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Θα υπάρξει ένας τυχερός/ή νικητής/ια που θα επιλεχθεί τυχαία μετά από κλήρωση</li>
+                        <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από το εμάς </li>
                     </ul>
                 </div>
             </div>
@@ -135,6 +135,16 @@ export default {
         const {form} = this.$refs;
         const fr = new TimelineLite()
 
+        const {arrow} = this.$refs;
+        const arrowAnimation = new TimelineLite();
+
+        arrowAnimation.to(arrow, 1, {x: 10})
+        arrowAnimation.to(arrow, 1, {x: 0})
+
+        this.arrowAnimation = new TimelineLite({
+            onComplete: () => this.arrowAnimation.restart()
+         })
+
     },
     components: {
     },
@@ -148,6 +158,12 @@ export default {
 </script>
 
 <style scoped>
+
+    
+
+    .arrow{
+        opacity: 0.9;
+    }
     
     .box{
         width:300px;
@@ -174,8 +190,8 @@ export default {
     
     #firstHero{
         height:500px;
-        background: url('~assets/adventure.jpg');
-        background-attachment: fixed;
+        background: url('~assets/banner.jpg');
+        background-size: 100%;
       
     }
     .subtitle h2{
@@ -269,6 +285,24 @@ export default {
         background-image: url("~assets/medical-website-mobile.jpg");
         background-attachment: fixed;
         background-size: 100%;
+        }
+        #firstHero{
+        height:500px;
+        background: url('~assets/banner-mobile.jpg');
+        background-size: 100%;
+        }
+        #titlos{
+            font-size: 31px;
+            margin-top:17px;
+        }
+        #subtitle{
+            margin-top:0px;
+        }
+        #lastHero{
+         background-image: url("~assets/medical-website-mobile.jpg");
+         background-attachment: fixed;
+         background-size: 100%;
+         height:300px;
     }
     }
 </style>
