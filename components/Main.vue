@@ -102,7 +102,7 @@
                     <ul>
                         <li ><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο διαγωνισμός λήγει στις τέλος Απριλίου </li>
                         <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Θα υπάρξει ένας τυχερός/ή νικητής/ια που θα επιλεχθεί τυχαία μετά από κλήρωση</li>
-                        <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από το εμάς </li>
+                        <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από εμάς </li>
                     </ul>
                 </div>
             </div>

@@ -12,7 +12,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
+      { property: "og:title", content : "Dermalogic Διαγωνισμός"},
+      { property: "og:description", content: "Λάβε μέρος και κέρδισε!"},
+      { property: "og:image", content: "@/assets/social.jpg"},
+      { propertu: "og:url", content: "https://www.dermalogic.ml"}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
