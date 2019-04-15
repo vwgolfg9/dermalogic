@@ -11,7 +11,7 @@
                     </h2>
                 </div>
                 <div class="">
-                    <a href="" class="button is-danger" v-scroll-to="{el:'form', duration:'1600'}">Μπες στον Διαγωνισμό!</a>
+                    <a id="koumpi" href="" class="button is-danger" v-scroll-to="{el:'form', duration:'1600'}">Μπες στον Διαγωνισμό!</a>
                 </div>
             </div>
         </div>
@@ -89,7 +89,7 @@
                         ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ
                     </div>
                     <div class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae sapiente perferendis, quis laboriosam tenetur, obcaecati nam, enim cum error aut quaerat suscipit sequi eveniet quae sed consequuntur iusto corrupti quisquam?
+                        Αt Dermatologic Skin Reconstruction & Antiaging Center we specialize in innovating, cutting-edge, Skin Reconstruction, Rejuvenation and Anti-aging procedures as well as  Plastic Surgery for the face and body. 
                     </div>
                
             </div>
@@ -303,6 +303,9 @@ export default {
          background-attachment: fixed;
          background-size: 100%;
          height:300px;
-    }
+        }
+        #koumpi{
+            margin-top:-9px;
+        }
     }
 </style>
