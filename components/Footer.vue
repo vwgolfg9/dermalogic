@@ -7,7 +7,7 @@
             <p><strong>Δευτέρα - Σάββατο :<br> 09:00 π.μ. - 20:00 μ.μ.</strong></p>
         </div>
         <div id="logiaContainer" class="column">
-            <h1 id="logia">Designed by: <span><a href="https://www.hexagoncommunication.com"><img id="hexagon" src="@/assets/logo hexagon.png" width="70" alt=""></a></span></h1>
+            <h1 id="logia">Developed by: <span><a href="https://www.hexagoncommunication.com"><img id="hexagon" src="@/assets/logo hexagon.png" width="70" alt=""></a></span></h1>
         </div>
     </div>
 </template>

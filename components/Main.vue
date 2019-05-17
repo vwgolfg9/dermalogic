@@ -3,11 +3,11 @@
         <div id="firstHero"  class="hero is-primary ">
             <div class="hero-body">
                 <div ref="title" class="title ">
-                    <h1 id="titlos" >Κέρδισε την θεραπεία INTENSIVE INSTANT LIFTING & GLOW αξίας 120 ευρώ</h1>
+                    <h1 id="titlos" >Κέρδισε την θεραπεία ολική επαναφορά i-Contour Cavitation RF</h1>
                 </div>
                 <div id="subtitle" ref="subtitle" class="subtitle">
                     <h2>
-                       Επαναστατική μεσοθεραπεία Ιατρικής Αισθητικής χωρίς βελόνες ή μηχανήματα για άμεσο λιφτινγκ, λείανση, αναδόμηση και λάμψη προσώπου και λαιμού.
+                        Απόκτησε και εσύ το ΤΕΛΕΙΟ ΣΩΜΑ ΑΠΑΛΛΑΓΜΕΝΟ ΑΠΟ ΚΥΤΤΑΡΙΤΙΔΑ ΧΑΛΑΡΩΣΗ ΚΑΙ ΤΟΠΙΚΟ ΠΑΧΟΣ ΑΞΙΑΣ €60!!
                     </h2>
                 </div>
                 <div class="">
@@ -100,7 +100,7 @@
                 <div class="title"><h2>ΟΡΟΙ ΚΑΙ ΠΡΟΫΠΟΘΕΣΕΙΣ</h2></div>
                 <div class="subtitle">
                     <ul>
-                        <li ><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο διαγωνισμός λήγει στις τέλος Απριλίου </li>
+                        <li ><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο διαγωνισμός λήγει μεσα Ιουνίου </li>
                         <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Θα υπάρξει ένας τυχερός/ή νικητής/ια που θα επιλεχθεί τυχαία μετά από κλήρωση</li>
                         <li><span> <img ref="arrow" class="arrow" src="@/assets/arrow.svg" width="15" alt=""></span> Ο νικητής/ια θα ανακοινωθεί στη σελίδα μας στο Facebook και θα ενημερωθεί προσωπικά από εμάς </li>
                     </ul>
