@@ -15,7 +15,7 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description },
       { property: "og:title", content : "Dermalogic Διαγωνισμός"},
       { property: "og:description", content: "Λάβε μέρος και κέρδισε!"},
-      { property: "og:image", content: "https://d33wubrfki0l68.cloudfront.net/b3eaa354facc61a06dcf06a5c7034f75b3707772/722b0/_nuxt/img/3bb488f.jpg"},
+      { property: "og:image", content: "https://d33wubrfki0l68.cloudfront.net/9266aa942250f70d2b09c1eb83a2303b4cd14bc7/e16f8/_nuxt/img/bde378d.jpg"},
       { propertu: "og:url", content: "https://www.dermalogic.ml"}
     ],
     link: [
